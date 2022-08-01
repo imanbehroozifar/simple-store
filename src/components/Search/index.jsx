@@ -1,11 +1,25 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import styles from './Search.module.css'
 const Search = () => {
+    const [state, setState] = useState({
+        value:''
+    })
+    const changeHandler = (e) => {
+      setState({value:e.target.value})  
+    }
+    console.log(state.value)
     return (
-        <div className={styles.container}>
+        <>
+          <div className={styles.container}>
             <p>Search What you want</p>
-            <input type="text" placeholder="Search ..."/>
-        </div>
+                <div>
+                    <input onChange={changeHandler} type="text" placeholder="Search ..." />
+                    <br/>
+                    <br/>
+                    <span>{state.value}</span>
+                </div>
+          </div>
+        </>
     );
 };
 

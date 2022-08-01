@@ -21,3 +21,24 @@
     border-radius: 5px;
     margin:10px
 }
+.counter{
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    border-top: 1px solid #000;
+    padding:30px 0;
+}
+.counter img{
+    width:30px;
+    margin:15px;
+    transform: rotate(90deg);
+
+}
+.counter span{
+    background:#30c0e4;
+    padding:10px;
+    border-radius: 10px;
+}
+.deactive {
+  opacity:0.2;
+}
