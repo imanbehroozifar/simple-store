@@ -10,12 +10,15 @@
     margin-bottom: 40px;
 }
 
-.container div{
-    display: flex;
+
+.logoBox{
+   display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: top 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
 }
 .container img{
     width: 200px;
+    margin-bottom:50px;
 }

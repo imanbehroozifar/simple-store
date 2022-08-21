@@ -20,11 +20,11 @@ const Card = ({ img, name, cost }) => {
      }
     return (
         <div className={styles.container}>
-            <img src={img} alt="iphone 13pro max" />
+            <img src={img} alt={name} />
             <h3>{name}</h3>
-            <p>{cost}</p>
+            <p>{cost}{state.counter ? ` * ${state.counter} = ${cost.split(' ')[0]*state.counter} $ ` :''}</p>
             <div className={styles.counter}>
-                <img className={state.counter === 0 && styles.deactive} onClick={downHandler} src={down} alt="Up" />
+                <img className={!state.counter ? styles.deactive :''} onClick={downHandler} src={down} alt="Up" />
                 <span>{state.counter}</span>
                 <img  onClick={upHandler} src={up} alt="Down"/>
             </div>

@@ -23,6 +23,10 @@
     color:white;
     font-weight: bold;
 }
-.list li:hover{
+.list li a:hover{
     color: rgb(233, 227, 227)
 }
+ .list li a{
+    color: #fff;
+    text-decoration:none;
+ }

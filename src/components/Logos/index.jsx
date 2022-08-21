@@ -7,7 +7,7 @@ const Logos = () => {
     return (
         <div className={styles.container}>
             <h3>Ho Support Us?</h3>
-            <div>
+            <div className={styles.logoBox}>
                 <img src={apple} alt='logo'/>
                 <img src={samsuung} alt='logo'/>
                 <img src={xiaomi} alt='logo' /> 

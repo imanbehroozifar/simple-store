@@ -1,5 +1,7 @@
 .container{
     margin:10px;
+    width: 300px;
+    margin-bottom: 30px;
     background-color: #ececec;
     border-radius:10px;
     overflow: hidden;
@@ -7,6 +9,7 @@
 }
 .container img {
     width: 300px;
+    height:200px
     
 }
 .container h3{
@@ -30,6 +33,7 @@
 }
 .counter img{
     width:30px;
+    height:fit-content;
     margin:15px;
     transform: rotate(90deg);
 

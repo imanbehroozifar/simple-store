@@ -1,18 +1,19 @@
 import React from "react";
-import Banner from "./components/Banner";
-import Cards from "./components/Cards";
+import { Route, Switch } from "react-router-dom";
 import Footer from "./components/Footer";
-import Logos from "./components/Logos";
+import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
-import Search from "./components/Search";
+import Products from "./components/Products";
+import AboutUs from './components/AboutUs/inedx'
 function App() {
   return (
     < >
-     <Navbar/>
-      <Banner />
-      <Cards />
-      <Search />
-      <Logos />
+      <Navbar />
+      <Switch>
+        <Route path="/aboutus" component={AboutUs} />
+        <Route path="/products" component={Products}/>
+          <Route path="/" component={LandingPage}/>
+        </Switch>
       <Footer/>
     </>
   );

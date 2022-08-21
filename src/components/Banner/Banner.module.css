@@ -15,4 +15,18 @@
 .textContainer h1{
     font-size: 5rem;
     color: #30c0e4;
+    
+}
+@media(max-width:768px){
+.textContainer h1{
+    font-size: 2.5rem
+ }
+}
+ @media (max-width: 768px){
+   .textContainer{
+    top:50px;
+    left:40px;
+   }  
+  
+    
 }
