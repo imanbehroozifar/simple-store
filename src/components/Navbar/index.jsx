@@ -9,7 +9,7 @@ const Navbar = () => {
                 <ul className={styles.list}>
                     <li><Link to='/'>Home Page</Link></li>
                     <li><Link to='/products'>Products</Link></li>
-                    <li><Link to='/aboutus'>About Us</Link></li> 
+                    <li><Link to='/product/us'>About Us</Link></li> 
                 </ul>
             </div>
             <div className={styles.logo}>

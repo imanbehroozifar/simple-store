@@ -9,17 +9,21 @@ const Cards = () => {
     const [state, setState] = useState(
         {
             products: [
-                { id: 1, name: 'Iphone10', cost: '600 $', img:iphone10},
-                { id: 2, name: 'Iphone11', cost: '800 $', img:iphone11},
-                { id: 3, name: 'Iphone12', cost: '1200 $', img:iphone12},
-                { id: 4, name: 'S21', cost: '790 $', img:s21},
+                { id: 1, name: 'Iphone 10', cost: '600 $', img:iphone10},
+                { id: 2, name: 'Iphone 11', cost: '800 $', img:iphone11},
+                { id: 3, name: 'Iphone 12', cost: '1200 $', img:iphone12},
+                { id: 4, name: 'S 21', cost: '790 $', img:s21},
             
         ]
        }
     )
     return (
         <div className={styles.container}>
-            {state.products.map((product) => <Card key={product.id} name={product.name} img={product.img} cost={product.cost} />)}
+            {state.products.map((product) => <Card
+                key={product.id}
+                name={product.name}
+                img={product.img}
+                cost={product.cost} />)}
         </div>
     );
 };

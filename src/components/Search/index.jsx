@@ -7,7 +7,6 @@ const Search = () => {
     const changeHandler = (e) => {
       setState({value:e.target.value})  
     }
-    console.log(state.value)
     return (
         <>
           <div className={styles.container}>
